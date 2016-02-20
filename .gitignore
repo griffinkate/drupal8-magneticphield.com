@@ -13,5 +13,4 @@ web/sites/default/files
 .idea
 
 # Ignore anything in core that isn't custom code
-web/*.*
 web/sites/*.*
