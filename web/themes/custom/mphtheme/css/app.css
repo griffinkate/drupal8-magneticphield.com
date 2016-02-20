@@ -3905,15 +3905,25 @@ header[role=banner] {
     text-transform: lowercase; }
     header[role=banner] #block-mphtheme-branding a .second-word {
       font-weight: 700; }
-  header[role=banner] #block-pageheader {
+  header[role=banner] #block-pageheader img {
+    position: absolute;
+    display: block;
+    max-width: auto;
+    height: 400px; }
+  header[role=banner] #block-pageheader .field--node--field_splash_text {
+    height: 230px;
+    margin-bottom: 230px;
+    padding-top: 170px;
     position: relative; }
     header[role=banner] #block-pageheader .field--node--field_splash_text p {
-      background-color: black;
+      background-color: #2B0505;
+      background-color: rgba(43, 5, 5, 0.7);
       color: #E3EBE8;
       font-size: 0.7em;
       font-weight: bold;
-      line-height: 1.2; }
+      line-height: 1.2;
+      padding: 0.2em; }
       header[role=banner] #block-pageheader .field--node--field_splash_text p strong {
         color: #C072C7; }
     header[role=banner] #block-pageheader .field--node--field_splash_text > div {
-      width: 63%; }
+      width: 65%; }
