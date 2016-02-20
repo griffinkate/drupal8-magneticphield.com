@@ -736,3 +736,9 @@ $settings['trusted_host_patterns'] = array(
   '^magneticphield8\.local$',
   '^(www\.)?magneticphield\.com$',
 );
+
+// Local overrides.
+$local_settings = __DIR__ . '/settings.local.php';
+if (file_exists($local_settings)) {
+  include($local_settings);
+}
