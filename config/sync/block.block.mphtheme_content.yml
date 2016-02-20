@@ -1,0 +1,22 @@
+uuid: c8ced50c-9764-4bfc-9c00-c77e876b0d6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mphtheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mphtheme_content
+theme: mphtheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

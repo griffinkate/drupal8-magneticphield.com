@@ -1,0 +1,22 @@
+uuid: 8d4ca516-22a5-4f61-8c02-2d1925a14d17
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mphtheme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: mphtheme_local_tasks
+theme: mphtheme
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

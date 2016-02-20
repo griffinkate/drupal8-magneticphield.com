@@ -1,0 +1,19 @@
+uuid: 214ed6b1-249c-423e-9221-331a6f5a1cb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_splash_text
+field_name: field_splash_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

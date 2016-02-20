@@ -1,0 +1,20 @@
+uuid: a01295be-6ed4-4aac-9d00-c56855bb364b
+langcode: en
+status: true
+dependencies:
+  module:
+    - ds_extras
+  theme:
+    - mphtheme
+id: pageheader
+theme: mphtheme
+region: header
+weight: -4
+provider: null
+plugin: 'ds_region_block:page_header'
+settings:
+  id: 'ds_region_block:page_header'
+  label: 'Page: header'
+  provider: ds_extras
+  label_display: '0'
+visibility: {  }

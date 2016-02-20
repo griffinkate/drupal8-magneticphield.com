@@ -1,0 +1,25 @@
+uuid: 2234c00c-3932-43eb-874b-754c2797507e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mphtheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: mphtheme_branding
+theme: mphtheme
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

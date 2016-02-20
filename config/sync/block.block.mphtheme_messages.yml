@@ -1,0 +1,22 @@
+uuid: 3dc644d9-b532-4fa8-b513-1923fc506c75
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mphtheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mphtheme_messages
+theme: mphtheme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

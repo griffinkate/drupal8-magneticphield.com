@@ -1,0 +1,14 @@
+uuid: 0861cc23-50b6-45f7-9159-8973f9718f84
+name: 'Magnetic Phield'
+mail: accounts@magneticphield.com
+slogan: 'We plan and make sites with nonprofits and charities, and for sustainable causes'
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,15 @@
+uuid: 42ee21ee-74d6-45e5-8d5a-90d3cd945fd8
+langcode: en
+status: true
+dependencies: {  }
+name: splash_letterbox
+label: 'Splash letterbox'
+effects:
+  ceb0e257-20ef-42ef-b234-527940ebe68d:
+    uuid: ceb0e257-20ef-42ef-b234-527940ebe68d
+    id: image_crop
+    weight: 1
+    data:
+      width: 2048
+      height: 400
+      anchor: center-top

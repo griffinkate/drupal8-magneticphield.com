@@ -1,0 +1,22 @@
+uuid: fbb89a9c-02b6-427f-9809-9f83e8929be1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mphtheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mphtheme_help
+theme: mphtheme
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
