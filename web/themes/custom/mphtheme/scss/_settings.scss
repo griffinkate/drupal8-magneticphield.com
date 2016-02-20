@@ -44,10 +44,25 @@
 // 1. Global
 // ---------
 
+// Brand colours.
+// From Kuler https://color.adobe.com/very-flashy-color-theme-5504012/edit
+$kuler-burnt-orange: #E37341;
+$kuler-teal: #72C7C0;
+$kuler-off-white: #EBE8E3;
+$kuler-grey: #333738;
+$kuler-navy: #05052B;
+
+// Kuler, but rotated 120 degrees in hue
+$rotated-green: #31AB44; // Dropped the value too, to reduce buzz.
+$rotated-plum: #C072C7;
+$rotated-off-white: #E3EBE8;
+$rotated-grey: #383337;
+$rotated-deep-red: #2B0505;
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: $rotated-green;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;

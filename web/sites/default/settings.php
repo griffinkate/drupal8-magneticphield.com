@@ -729,3 +729,9 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_jdpFO-biDa6ga-IacJucaE7UbZAkv_QX0hQr5cGA72IlDBu2lLW6oHsIyxQsXcG89CgvDX75aA/sync';
+
+// Configure trusted host patterns.
+$settings['trusted_host_patterns'] = array(
+  '^magneticphield8\.local$',
+  '^(www\.)?magneticphield\.com$',
+);

@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Custom styles
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Numans, sans-serif;
+}
+
+header[role=banner] {
+  background-color: $rotated-deep-red;
+  border-top: solid 0.5em $rotated-green;
+
+  #block-mphtheme-branding a {
+    color: $rotated-off-white;
+    display: block;
+    font-family: Oxygen, sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0.25em 0 0.333333em;
+    text-transform: lowercase;
+
+    .second-word {
+      font-weight: 700;
+    }
+  }
+
+  #block-pageheader {
+    position: relative;
+
+    .field--node--field_splash_text {
+      p {
+        background-color: black;
+        color: $rotated-off-white;
+        font-size: 0.7em;
+        font-weight: bold;
+        line-height: 1.2;
+
+        strong {
+          color: $rotated-plum;
+        }
+      }
+
+      & > div {
+        width: 63%;
+      }
+    }
+  }
+}

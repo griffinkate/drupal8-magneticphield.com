@@ -5,5 +5,4 @@ base theme: stable
 core: 8.x
 libraries:
   - mphtheme/global-styles
-stylesheets-remove:
-  - core/themes/stable/css/system/components/ajax-progress.module.css
+  - mphtheme/fonts
