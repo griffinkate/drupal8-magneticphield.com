@@ -1,0 +1,9 @@
+name: 'MPh Theme'
+type: theme
+description: 'Custom theme based on stable, using Foundation CSS.'
+base theme: stable
+core: 8.x
+libraries:
+  - mphtheme/global-styles
+stylesheets-remove:
+  - core/themes/stable/css/system/components/ajax-progress.module.css
