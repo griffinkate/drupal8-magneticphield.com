@@ -1,0 +1,25 @@
+uuid: 5467c4fd-ffaa-4fa4-ab62-9854f2b2c5a4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bcb8ebdd-1162-4c51-8200-f3aabab69787'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: message_second
+theme: mphtheme
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:bcb8ebdd-1162-4c51-8200-f3aabab69787'
+settings:
+  id: 'block_content:bcb8ebdd-1162-4c51-8200-f3aabab69787'
+  label: 'Build quality'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

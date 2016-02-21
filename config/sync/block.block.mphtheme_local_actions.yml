@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: mphtheme_local_actions
 theme: mphtheme
-region: content
-weight: -6
+region: sidebar_first
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

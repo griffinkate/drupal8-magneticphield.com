@@ -1,0 +1,25 @@
+uuid: b0f23d2d-a81c-4266-bc3c-601b56bc599a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:afabdc3c-7077-468a-b646-702eca58cd73'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: contactus
+theme: mphtheme
+region: post_content
+weight: -6
+provider: null
+plugin: 'block_content:afabdc3c-7077-468a-b646-702eca58cd73'
+settings:
+  id: 'block_content:afabdc3c-7077-468a-b646-702eca58cd73'
+  label: 'Get in touch'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

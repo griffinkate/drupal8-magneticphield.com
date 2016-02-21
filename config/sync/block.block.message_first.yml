@@ -1,0 +1,25 @@
+uuid: 29babf88-f326-4d94-ab0d-13193432c0ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed8f1f8c-8364-4609-9a09-094c604d498a'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: message_first
+theme: mphtheme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:ed8f1f8c-8364-4609-9a09-094c604d498a'
+settings:
+  id: 'block_content:ed8f1f8c-8364-4609-9a09-094c604d498a'
+  label: 'Focus on users'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

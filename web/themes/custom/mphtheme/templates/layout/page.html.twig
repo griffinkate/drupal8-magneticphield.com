@@ -49,34 +49,38 @@
     {{ page.header }}
   </header>
 
-  <div class="row">
-    {{ page.primary_menu }}
-    {{ page.secondary_menu }}
-
+  <div class="row highlighted-and-help">
     {{ page.highlighted }}
-  </div>
-
-  <div class="row">
     {{ page.help }}
   </div>
 
   <main role="main" class="row">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+    <div class="row">
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
+      <aside class="layout-sidebar-first large-4 columns" role="complementary">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
+    <div class="layout-content large-4 columns">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
+      <aside class="layout-sidebar-second large-4 columns" role="complementary">
         {{ page.sidebar_second }}
       </aside>
+    {% endif %}
+
+    </div>
+
+    {% if page.post_content %}
+      <div class="layout-post-content large-12">
+        {{ page.post_content }}
+      </div>
     {% endif %}
 
   </main>

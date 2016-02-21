@@ -1,0 +1,25 @@
+uuid: c46d41db-0394-43ed-8500-ba502a956246
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d92e4e38-d466-4cc4-a600-d93e1b2c4f6f'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: message_third
+theme: mphtheme
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:d92e4e38-d466-4cc4-a600-d93e1b2c4f6f'
+settings:
+  id: 'block_content:d92e4e38-d466-4cc4-a600-d93e1b2c4f6f'
+  label: 'Manage projects'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

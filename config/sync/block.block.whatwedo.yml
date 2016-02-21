@@ -1,0 +1,25 @@
+uuid: a366b3f2-fc23-4baa-9509-9b59a1db9c33
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ee80d62f-91fc-4b69-8b00-0c20b2987aa6'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: whatwedo
+theme: mphtheme
+region: help
+weight: -6
+provider: null
+plugin: 'block_content:ee80d62f-91fc-4b69-8b00-0c20b2987aa6'
+settings:
+  id: 'block_content:ee80d62f-91fc-4b69-8b00-0c20b2987aa6'
+  label: 'What we do'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

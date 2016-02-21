@@ -4,7 +4,8 @@
  */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Numans, sans-serif;
+  color: $rotated-plum;
+  font-family: Numans, $body-font-family;
 }
 
 header[role=banner] {
@@ -14,7 +15,7 @@ header[role=banner] {
   #block-mphtheme-branding a {
     color: $rotated-off-white;
     display: block;
-    font-family: Oxygen, sans-serif;
+    font-family: Oxygen, $body-font-family;
     font-size: 3em;
     font-weight: 300;
     line-height: 1.5;
@@ -36,7 +37,7 @@ header[role=banner] {
 
     .field--node--field_splash_text {
       height: 230px;
-      margin-bottom: 230px;
+      margin-bottom: 170px;
       padding-top: 170px;
       position: relative;
 
@@ -59,5 +60,55 @@ header[role=banner] {
         width: 65%;
       }
     }
+  }
+}
+
+.highlighted-and-help {
+  padding: 2em 0;
+}
+
+.highlighted-and-help, .layout-post-content #block-contactus {
+  font-size: 1.4em;
+
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+main {
+  h2 {
+    text-align: center;
+  }
+}
+
+.layout-post-content {
+  padding-bottom: 2em;
+
+  h2 {
+    padding-top: 1em;
+  }
+  img {
+    padding: 0.5em 2em;
+  }
+
+  h3, h4 {
+    margin: 0;
+  }
+}
+
+footer[role=contentinfo] {
+  background-color: $rotated-grey;
+  border-top: solid 0.5em $rotated-plum;
+  color: $rotated-off-white;
+  font-family: Numans, $body-font-family;
+  font-size: 0.7em;
+  padding: 2em 0 3em;
+
+  text-align: center;
+
+  p {
+    margin: 0;
   }
 }

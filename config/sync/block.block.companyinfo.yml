@@ -1,0 +1,25 @@
+uuid: ea3f8be3-ca0e-4ae8-bb00-ee7f0bd2b5de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d7329265-6126-4915-a912-184f06c85545'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: companyinfo
+theme: mphtheme
+region: footer
+weight: null
+provider: null
+plugin: 'block_content:d7329265-6126-4915-a912-184f06c85545'
+settings:
+  id: 'block_content:d7329265-6126-4915-a912-184f06c85545'
+  label: 'Company info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

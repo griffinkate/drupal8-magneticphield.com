@@ -1,0 +1,25 @@
+uuid: d60ec2e9-ee1c-4e7f-9963-99cbdac4fe5b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34851a3e-f8f4-4f0a-be06-6a32002c8bfd'
+  module:
+    - block_content
+  theme:
+    - mphtheme
+id: whoarewe
+theme: mphtheme
+region: post_content
+weight: -7
+provider: null
+plugin: 'block_content:34851a3e-f8f4-4f0a-be06-6a32002c8bfd'
+settings:
+  id: 'block_content:34851a3e-f8f4-4f0a-be06-6a32002c8bfd'
+  label: 'Who is Magnetic Phield?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

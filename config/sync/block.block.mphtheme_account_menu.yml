@@ -6,14 +6,15 @@ dependencies:
     - system.menu.account
   module:
     - system
+    - user
   theme:
     - mphtheme
 _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: mphtheme_account_menu
 theme: mphtheme
-region: secondary_menu
-weight: 0
+region: sidebar_second
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -23,4 +24,12 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
