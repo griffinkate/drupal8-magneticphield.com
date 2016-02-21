@@ -50,27 +50,29 @@
   </header>
 
   <div class="row highlighted-and-help">
-    {{ page.highlighted }}
-    {{ page.help }}
+    <div class="columns">
+      {{ page.highlighted }}
+      {{ page.help }}
+    </div>
   </div>
 
-  <main role="main" class="row">
+  <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="row">
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first large-4 columns" role="complementary">
+      <aside class="layout-sidebar-first large-4 medium-12 columns" role="complementary">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
-    <div class="layout-content large-4 columns">
+    <div class="layout-content large-4 medium-12 columns">
       {{ page.content }}
     </div>{# /.layout-content #}
 
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second large-4 columns" role="complementary">
+      <aside class="layout-sidebar-second large-4 medium-12 columns" role="complementary">
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
@@ -78,8 +80,10 @@
     </div>
 
     {% if page.post_content %}
-      <div class="layout-post-content large-12">
-        {{ page.post_content }}
+      <div class="row">
+        <div class="layout-post-content large-12 medium-12 columns">
+          {{ page.post_content }}
+        </div>
       </div>
     {% endif %}
 

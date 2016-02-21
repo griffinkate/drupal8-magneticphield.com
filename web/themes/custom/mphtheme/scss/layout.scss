@@ -3,38 +3,133 @@
  * Custom styles
  */
 
+// All header styles.
 h1, h2, h3, h4, h5, h6 {
   color: $rotated-plum;
   font-family: Numans, $body-font-family;
 }
 
+// Custom header banner, with logo, splash image, splash text.
 header[role=banner] {
-  background-color: $rotated-deep-red;
   border-top: solid 0.5em $rotated-green;
 
-  #block-mphtheme-branding a {
-    color: $rotated-off-white;
-    display: block;
-    font-family: Oxygen, $body-font-family;
-    font-size: 3em;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 0.25em 0 0.333333em;
-    text-transform: lowercase;
+  // Logo.
+  #block-mphtheme-branding {
+    background-color: $rotated-deep-red;
+    a {
+      color: $rotated-off-white;
+      display: block;
+      font-family: Oxygen, $body-font-family;
+      font-size: 3em;
+      font-weight: 300;
+      line-height: 1.5;
+      padding: 0.25em 0.2em 0.333333em;
+      text-transform: lowercase;
 
-    .second-word {
-      font-weight: 700;
+      .second-word {
+        font-weight: 700;
+      }
     }
   }
 
+  // Splash.
   #block-pageheader {
+    // Ensure image transforms within its own div.
     div {
       position: relative;
+      overflow: hidden;
+    }
+
+    img, h1 {
+      display: none;
+    }
+
+    // Splash text is laid over.
+    .field--node--field_splash_text {
+      p {
+        font-size: 0.7em;
+        font-weight: bold;
+        line-height: 1.2;
+        padding: 0.2em;
+
+        strong {
+          color: $rotated-plum;
+        }
+      }
+    }
+  }
+}
+
+.highlighted-and-help {
+  padding-top: 1em;
+}
+
+// This region shares some styles with the contact-us block.
+.highlighted-and-help, .layout-post-content #block-contactus {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+// Most of main is handled by the grid.
+main {
+  // Tighten headings against text.
+  h2 {
+    margin: 0.4rem 0 0;
+  }
+}
+
+
+// Post-content needs to include a portrait.
+.layout-post-content {
+  padding-bottom: 2em;
+
+  h2 {
+    padding-top: 1em;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0 0;
+  }
+
+  // Headings for name and job title need to be tight.
+  h3, h4 {
+    margin: 0;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// Footer "ends" the page scroll cleanly.
+footer[role=contentinfo] {
+  background-color: $rotated-grey;
+  border-top: solid 0.5em $rotated-plum;
+  color: $rotated-off-white;
+  font-family: Numans, $body-font-family;
+  font-size: 0.7em;
+  padding: 2em 0 2em;
+
+  text-align: center;
+}
+
+/**
+ * @breakpoint 640px=40em
+ */
+@media screen and (min-width: 40em) {
+  header[role=banner] #block-pageheader div {
+    div {
+      height: 400px;
     }
 
     img {
-      position: absolute;
       display: block;
+      // Splash image is "cropped" by the browser.
+      position: relative;
+      // Undo what Foundation has done.
       max-width: none;
       height: 400px;
 
@@ -47,77 +142,92 @@ header[role=banner] {
       -o-transform: translate(-50%, 0%);
       transform: translate(-50%, 0%);
     }
+  }
 
-    .field--node--field_splash_text {
-      height: 230px;
-      margin-bottom: 170px;
-      padding-top: 170px;
-      position: relative;
+  header[role=banner] #block-pageheader .field--node--field_splash_text {
+    display: block;
+    height: 340px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    position: relative;
 
-      p {
-        background-color: $rotated-deep-red;
-        background-color: rgba($rotated-deep-red, 0.7);
+    top: -400px;
+    margin-bottom: -400px;
 
-        color: $rotated-off-white;
-        font-size: 0.7em;
-        font-weight: bold;
-        line-height: 1.2;
-        padding: 0.2em;
+    & > div {
+      width: 80%;
+      margin: 0 auto;
+    }
 
-        strong {
-          color: $rotated-plum;
-        }
-      }
+    p {
+      background-color: $rotated-deep-red;
+      background-color: rgba($rotated-deep-red, 0.7);
 
-      & > div {
-        width: 65%;
+      color: $rotated-off-white;
+      font-size: 0.7em;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 0.2em;
+
+      strong {
+        color: $rotated-plum;
       }
     }
   }
-}
 
-.highlighted-and-help {
-  padding: 2em 0;
-}
-
-.highlighted-and-help, .layout-post-content #block-contactus {
-  font-size: 1.4em;
-
-  text-align: center;
-
-  p {
-    margin: 0;
+  // Pre-content is in the highlighted-and-help region.
+  .highlighted-and-help {
+    max-width: 800px;
+    padding: 4em 0 1em;
   }
-}
 
-main {
-  h2 {
+  // This region shares some styles with the contact-us block.
+  .highlighted-and-help, .layout-post-content #block-contactus {
+    font-size: 1.4em;
     text-align: center;
+
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // No longer centre headings for name, job title.
+  #block-whoarewe {
+    h3, h4 {
+      text-align: left;
+    }
+  }
+
+  // Portrait image floating.
+  #block-whoarewe img {
+    display: inline;
+    float: right;
+    padding: 0em 2em 1em;
   }
 }
 
-.layout-post-content {
-  padding-bottom: 2em;
-
-  h2 {
-    padding-top: 1em;
+/**
+ * @breakpoint 960px=64em
+ */
+@media screen and (min-width: 64em) {
+  header[role=banner] #block-pageheader .field--node--field_splash_text {
+    & > div {
+      width: 65%;
+      margin: 0;
+    }
   }
-  img {
-    padding: 0.5em 2em;
+
+  // Pre-content is in the highlighted-and-help region.
+  .highlighted-and-help {
+    padding-bottom: 2em;
   }
 
-  h3, h4 {
-    margin: 0;
+  // Re-align headings into the centre.
+  main {
+    h2 {
+      margin: 0 0 0.5rem;
+      text-align: center;
+    }
   }
-}
-
-footer[role=contentinfo] {
-  background-color: $rotated-grey;
-  border-top: solid 0.5em $rotated-plum;
-  color: $rotated-off-white;
-  font-family: Numans, $body-font-family;
-  font-size: 0.7em;
-  padding: 2em 0 2em;
-
-  text-align: center;
 }
