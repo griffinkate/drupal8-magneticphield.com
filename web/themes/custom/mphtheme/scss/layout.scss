@@ -28,11 +28,24 @@ header[role=banner] {
   }
 
   #block-pageheader {
+    div {
+      position: relative;
+    }
+
     img {
       position: absolute;
       display: block;
-      max-width: auto;
+      max-width: none;
       height: 400px;
+
+      // Positioning for browsers that can transform.
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
     }
 
     .field--node--field_splash_text {

@@ -3906,11 +3906,18 @@ header[role=banner] {
     text-transform: lowercase; }
     header[role=banner] #block-mphtheme-branding a .second-word {
       font-weight: 700; }
+  header[role=banner] #block-pageheader div {
+    position: relative; }
   header[role=banner] #block-pageheader img {
     position: absolute;
     display: block;
-    max-width: auto;
-    height: 400px; }
+    max-width: none;
+    height: 400px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); }
   header[role=banner] #block-pageheader .field--node--field_splash_text {
     height: 230px;
     margin-bottom: 170px;
