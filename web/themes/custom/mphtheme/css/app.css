@@ -3914,6 +3914,9 @@ header[role=banner] {
     header[role=banner] #block-pageheader div {
       position: relative;
       overflow: hidden; }
+    header[role=banner] #block-pageheader div.contextual {
+      position: absolute;
+      overflow: visible; }
     header[role=banner] #block-pageheader .field--node--field_splash_text p {
       font-size: 0.7em;
       font-weight: bold;

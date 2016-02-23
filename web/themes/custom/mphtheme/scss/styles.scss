@@ -44,6 +44,12 @@ header[role=banner] {
       overflow: hidden;
     }
 
+    // But don't apply this to the quickedit link.
+    div.contextual {
+      position: absolute;
+      overflow: visible;
+    }
+
     // Splash text is laid over.
     .field--node--field_splash_text {
       p {
