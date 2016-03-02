@@ -3,6 +3,22 @@
  * Custom styles
  */
 
+body > div {
+  position: relative;
+  z-index: 0;
+}
+
+#watermark {
+  background: transparent url('../images/compass-31ab44-transparent.png') bottom left no-repeat;
+  background-size: 80px 80px;
+  height: 110px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  z-index: 5;
+}
+
 // All header styles.
 h1, h2, h3, h4, h5, h6 {
   color: $rotated-plum;
@@ -28,6 +44,7 @@ header[role=banner] {
 
       .second-word {
         font-weight: 700;
+        padding-right: 100px;
       }
     }
   }
@@ -126,6 +143,13 @@ footer[role=contentinfo] {
  * @breakpoint 640px=40em
  */
 @media screen and (min-width: 40em) {
+  #watermark {
+    background-size: 220px 220px;
+    height: 160px;
+    top: 0;
+    width: 160px;
+  }
+
   header[role=banner] #block-pageheader {
     display: block;
     div div {
@@ -217,6 +241,14 @@ footer[role=contentinfo] {
  * @breakpoint 960px=64em
  */
 @media screen and (min-width: 64em) {
+  #watermark {
+    background-position: top left;
+    background-size: 400px 400px;
+    height: 280px;
+    top: 256px;
+    width: 280px;
+  }
+
   header[role=banner] #block-pageheader .field--node--field_splash_text {
     height: 360px;
     padding-top: 40px;

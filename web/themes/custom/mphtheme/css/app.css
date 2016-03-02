@@ -3888,6 +3888,20 @@ table.hover tr:nth-of-type(even):hover {
  * @file
  * Custom styles
  */
+body > div {
+  position: relative;
+  z-index: 0; }
+
+#watermark {
+  background: transparent url("../images/compass-31ab44-transparent.png") bottom left no-repeat;
+  background-size: 80px 80px;
+  height: 110px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  z-index: 5; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #C072C7;
   font-family: Numans, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
@@ -3906,7 +3920,8 @@ header[role=banner] {
       padding: 0.25em 0.2em 0.333333em;
       text-transform: lowercase; }
       header[role=banner] #block-mphtheme-branding a .second-word {
-        font-weight: 700; }
+        font-weight: 700;
+        padding-right: 100px; }
   header[role=banner] #block-pageheader {
     background-color: #31AB44;
     display: none;
@@ -3963,6 +3978,11 @@ footer[role=contentinfo] {
  * @breakpoint 640px=40em
  */
 @media screen and (min-width: 40em) {
+  #watermark {
+    background-size: 220px 220px;
+    height: 160px;
+    top: 0;
+    width: 160px; }
   header[role=banner] #block-pageheader {
     display: block; }
     header[role=banner] #block-pageheader div div {
@@ -4018,6 +4038,12 @@ footer[role=contentinfo] {
  * @breakpoint 960px=64em
  */
 @media screen and (min-width: 64em) {
+  #watermark {
+    background-position: top left;
+    background-size: 400px 400px;
+    height: 280px;
+    top: 256px;
+    width: 280px; }
   header[role=banner] #block-pageheader .field--node--field_splash_text {
     height: 360px;
     padding-top: 40px; }
