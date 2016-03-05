@@ -8,8 +8,16 @@ effects:
   ceb0e257-20ef-42ef-b234-527940ebe68d:
     uuid: ceb0e257-20ef-42ef-b234-527940ebe68d
     id: image_crop
-    weight: 1
+    weight: -9
     data:
       width: 2048
       height: 400
+      anchor: center-center
+  114a2c58-038c-4b5d-b351-81888911d03d:
+    uuid: 114a2c58-038c-4b5d-b351-81888911d03d
+    id: image_crop
+    weight: -10
+    data:
+      width: 2048
+      height: 600
       anchor: center-top
