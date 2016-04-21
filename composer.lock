@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f94165e189bff0c42a0430fd11e2b456",
-    "content-hash": "e0007003ca4c9e329dd739c53e4fce72",
+    "hash": "9e61dadcc2f5466549c8ece3750e4b33",
+    "content-hash": "b0a10772cfc3b0bda6511b8ad7f82a26",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -703,6 +703,37 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "drupal/coffee",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/coffee",
+                "reference": "1b3a3185ade57f97ba64def2b40c70a47c310260"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides an Alfred like search box to navigate within your site.",
+            "homepage": "https://www.drupal.org/project/coffee",
+            "time": "2016-01-15 13:19:51"
         },
         {
             "name": "drupal/console",
@@ -2421,7 +2452,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/fbd0083cd9dac06556bd1096deaa0295c18a7584",
+                "url": "https://api.github.com/repos/symfony/config/zipball/9b4d2c0ba53d3226f455d5cc7d3655f6a5371b37",
                 "reference": "fbd0083cd9dac06556bd1096deaa0295c18a7584",
                 "shasum": ""
             },
@@ -3486,7 +3517,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/ab94426d127ad9e95433778a3a451fe9d18f3d6b",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/71b6534179d2381dc9a768369e5dafb8929fba34",
                 "reference": "ab94426d127ad9e95433778a3a451fe9d18f3d6b",
                 "shasum": ""
             },
