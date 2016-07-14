@@ -733,7 +733,7 @@ $config_directories['sync'] = '../config/sync';
 
 // Configure trusted host patterns.
 $settings['trusted_host_patterns'] = array(
-  '^magneticphield8\.local$',
+  '^magneticphield\.local$',
   '^(www\.)?magneticphield\.com$',
 );
 
