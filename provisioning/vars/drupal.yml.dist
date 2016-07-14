@@ -1,0 +1,4 @@
+database:
+  name: drupal8_magneticphield
+  user: d8
+  pass: d8
