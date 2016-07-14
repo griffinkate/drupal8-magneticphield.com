@@ -22,4 +22,6 @@
   mysql_db: name={{ database.name }} state=present
 
 - name: Assign permissions.
-  mysql_user: name={{ database.user }} password={{ database.pass }} priv={{ database.name }}.*:ALL,GRANT state=present
+  mysql_user: >
+    name={{ database.user }} password={{ database.pass }}
+    priv={{ database.name }}.*:ALL,GRANT state=present

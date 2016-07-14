@@ -1,0 +1,18 @@
+# @file
+# Drupal-related tasks: database dump etc.
+
+- name: Check if database dump exists.
+  stat: path="/var/dumps/{{ database.name }}.sql.gz"
+  register: dump
+
+- name: Import database dump.
+  mysql_db: >
+    name={{ database.name }} state=import
+    target='/var/dumps/{{ database.name }}.sql.gz'
+  when: dump.stat.exists
+
+- name: Move database dump aside.
+  command: >
+    mv /var/dumps/{{ database.name }}.sql.gz
+    /var/dumps/{{ database.name }}.sql.gz.imported
+  when: dump.stat.exists
