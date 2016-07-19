@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e56815a75809ec52402d12b5a49b10e1",
-    "content-hash": "065898a8c27858ba75f69cadcb45735f",
+    "hash": "02c26fd175f6f5f27c0c170f992ae142",
+    "content-hash": "f2844e438429afd7620ad12926e64de0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1094,15 +1094,15 @@
         },
         {
             "name": "drupal/ds",
-            "version": "8.2.3",
+            "version": "8.2.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ds",
-                "reference": "9870d5e4061cac119d23798342d4be7ab9f09525"
+                "reference": "f8c434e10066dd1d1c9906e2091500d536eef164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-2.3.zip",
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-2.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1151,7 +1151,7 @@
                 "layout",
                 "php"
             ],
-            "time": "2016-01-16 17:51:32"
+            "time": "2016-06-24 10:26:48"
         },
         {
             "name": "drupal/layout_plugin",
