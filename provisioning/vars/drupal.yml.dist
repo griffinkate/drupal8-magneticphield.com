@@ -1,4 +1,8 @@
 database:
-  name: drupal8_magneticphield
-  user: d8
-  pass: d8
+  name: drupal8_dbname
+  user: username
+  pass: password
+
+codebase:
+  domain: hostname.local
+  short_name: myshortname
