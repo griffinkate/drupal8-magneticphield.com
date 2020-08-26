@@ -717,25 +717,37 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
+//$databases['default']['default'] = array (
+//  'database' => 'drupal8_magneticphield',
+//  'username' => 'mph8',
+//  'password' => 'mph8',
+//  'prefix' => '',
+//  'host' => 'localhost',
+//  'port' => '',
+//  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+//  'driver' => 'mysql',
+//);
+
 $databases['default']['default'] = array (
-  'database' => 'drupal8_magneticphield',
-  'username' => 'mph8',
-  'password' => 'mph8',
+  'database' => 'drupal8',
+  'username' => 'drupal8',
+  'password' => 'drupal8',
   'prefix' => '',
-  'host' => 'localhost',
-  'port' => '',
+  'host' => 'database',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_jdpFO-biDa6ga-IacJucaE7UbZAkv_QX0hQr5cGA72IlDBu2lLW6oHsIyxQsXcG89CgvDX75aA/sync';
 $config_directories['sync'] = '../config/sync';
 
 // Configure trusted host patterns.
-$settings['trusted_host_patterns'] = array(
-  '^magneticphield\.local$',
-  '^(www\.)?magneticphield\.com$',
-);
+//$settings['trusted_host_patterns'] = array(
+//  '^magneticphield\.local$',
+//  '^(www\.)?magneticphield\.com$',
+//);
 
 // Local overrides.
 $local_settings = __DIR__ . '/settings.local.php';
